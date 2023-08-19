@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management CRUD</h1>
+        <form class="inputs" id="form">
+            <input type="text" placeholder="Name" id="name" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="number" placeholder="GPA" id="gpa" min="0" max="10" step="0.1">
+            <input type="number" placeholder="Age" id="age" min="16" max="35">
+            <input type="text" placeholder="Degree" id="degree">
+            <button id="btn" type="submit">Add Student</button>
+        </form>
+        
+            <input class="searchBar" type="text" placeholder="Search By Name, email or degree" id="searchStudent">        
+
+        <table id="studentTable" border="2px solid white" cellSpacing="0">
+                <thead>
+                    <tr> 
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>GPA</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Shreyas Shinde</td>
+                        <td>Shreyas@gmail.com</td>
+                        <td>25</td>
+                        <td>7.12</td>
+                        <td>BE
+                            <button id="edit">
+                                <img src="./images/trash-2 1.png" width="17px"">
+                            </button>
+                            <button id="delete">
+                                <img src="./images/edit 1.png" width="17px">
+                            </button>
+                         </td> -->
+                </tbody>
+            </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
